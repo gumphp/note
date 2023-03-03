@@ -1,1 +1,2 @@
-# note
+* [php](/php/)
+* [js](/js/)
