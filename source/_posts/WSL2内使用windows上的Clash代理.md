@@ -17,6 +17,3 @@ export https_proxy=http://host.docker.internal:7890;export http_proxy=http://hos
 其中，host.docker.internal 是 Windows 系统的本地回环地址，port 是代理服务器的端口号。
 
 如果希望这些环境变量在每次启动 WSL 时自动设置，可以将上述命令添加到 `.bashrc` 或者 `.zshrc` 文件中。
-
-
-[来源](https://www.zhihu.com/tardis/bd/art/452682481)
