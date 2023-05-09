@@ -145,6 +145,79 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://gumphp.github.io/posts/wsl2-use-windows-clash-proxy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="chen">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="开发笔记">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/wsl2-use-windows-clash-proxy/" class="post-title-link" itemprop="url">WSL2内使用windows上的Clash代理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-05-09 17:26:50 / 修改时间：17:30:00" itemprop="dateCreated datePublished" datetime="2023-05-09T17:26:50+08:00">2023-05-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/wsl/" itemprop="url" rel="index"><span itemprop="name">wsl</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export https_proxy=http://host.docker.internal:7890;export http_proxy=http://host.docker.internal:7890;export all_proxy=socks5://host.docker.internal:7890</span><br></pre></td></tr></table></figure>
+
+<p>在 WSL 中，需要将 HTTP_PROXY 和 HTTPS_PROXY 环境变量设置为 Windows 系统的本地回环地址和代理端口号。</p>
+<p>其中，host.docker.internal 是 Windows 系统的本地回环地址，port 是代理服务器的端口号。</p>
+<p>如果希望这些环境变量在每次启动 WSL 时自动设置，可以将上述命令添加到 <code>.bashrc</code> 或者 <code>.zshrc</code> 文件中。</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/tardis/bd/art/452682481">来源</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://gumphp.github.io/posts/git-bash-git-status-chinese-messy-code/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -170,7 +243,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-05-09 10:19:50 / 修改时间：14:33:26" itemprop="dateCreated datePublished" datetime="2023-05-09T10:19:50+08:00">2023-05-09</time>
+              <time title="创建时间：2023-05-09 10:19:50 / 修改时间：17:30:00" itemprop="dateCreated datePublished" datetime="2023-05-09T10:19:50+08:00">2023-05-09</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -252,7 +325,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-05-09 14:33:26" itemprop="dateModified" datetime="2023-05-09T14:33:26+08:00">2023-05-09</time>
+                <time title="修改时间：2023-05-09 17:30:00" itemprop="dateModified" datetime="2023-05-09T17:30:00+08:00">2023-05-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -372,16 +445,16 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">标签</span>
       </div>
   </nav>
