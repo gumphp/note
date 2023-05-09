@@ -13,7 +13,7 @@ timezone: 'PRC'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://gumphp.github.io
+url: http://gumphp.github.io/note
 permalink: posts/:uri/
 permalink_defaults:
 pretty_urls:
